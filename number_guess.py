@@ -1,8 +1,11 @@
 import math
 import random
 
+#Input Lower and Higher Bound for the Guessing Game.
 lower = int(input("Enter the lower Bound: "))
 higher = int(input("Enter the higher bound: "))
+
+#Generating Random Number between Lower and Higher
 x = random.randint(lower, higher)
 total_chances = math.ceil(math.log(higher - lower + 2, 2))
 
@@ -17,10 +20,10 @@ while count <= total_chances:
         flag = True
         break
     elif x > guess:
-        print("You choose to high!")
+        print("You choose to Higher!")
     elif x < guess:
-        print("U choice to small")
+        print("You choose to Smaller")
+
 if not flag:
     print('The number was: ', x)
     print('Better luck next time!!!')
-
