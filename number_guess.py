@@ -20,9 +20,9 @@ while count <= total_chances:
         flag = True
         break
     elif x > guess:
-        print("You choose to Higher!")
+        print("You choose to Smaller!")
     elif x < guess:
-        print("You choose to Smaller")
+        print("You choose to Higher")
 
 if not flag:
     print('The number was: ', x)
