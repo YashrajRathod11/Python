@@ -22,7 +22,7 @@ while count <= total_chances:
     elif x > guess:
         print("You choose to Smaller!")
     elif x < guess:
-        print("You choose to Higher")
+        print("You choose to Higher!")
 
 if not flag:
     print('The number was: ', x)
